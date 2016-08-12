@@ -1,0 +1,17 @@
+﻿<Playlist>
+  <Attributes>
+    <ProductAttribute Name="time" ID="0">10</ProductAttribute>
+    <ProductAttribute Name="pagetype" ID="0">1</ProductAttribute>
+    <ProductAttribute Name="img" ID="0">/content/img/img01.jpg</ProductAttribute>
+    <ProductAttribute Name="url" ID="0">/content/page/tp030.html</ProductAttribute>
+    <ProductAttribute Name="txt1" ID="0">Loren Ipson</ProductAttribute>
+  </Attributes> 
+  <Attributes>
+    <ProductAttribute Name="time" ID="0">10</ProductAttribute>
+    <ProductAttribute Name="pagetype" ID="0">1</ProductAttribute>
+    <ProductAttribute Name="img" ID="0">/content/img/img02.jpg</ProductAttribute>
+    <ProductAttribute Name="url" ID="0">/content/page/tp031.html</ProductAttribute>
+    <ProductAttribute Name="txt1" ID="0">Loren Ipson</ProductAttribute>
+  <ProductAttribute Name="txt2" ID="0">Ipson</ProductAttribute>
+  </Attributes>
+</Playlist>

@@ -1,0 +1,119 @@
+﻿body {
+    text-align:left;    
+    background-color:#ffffff;
+    overflow: hidden;
+    word-spacing: 6px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8); 
+    color:#fff; 
+}
+
+/**********************************************************************
+BOX
+**********************************************************************/
+.box01, .box02 {
+    border: 0.4vw dotted rgba(255,255,255,0.91);
+    border-radius: 8px;
+}
+.box01 {
+  position: absolute;
+  z-index:3;
+  width: auto;
+  margin: 2vw 2vw;   
+  border: none;  
+  bottom:0; 
+  background-color:rgba(255,255,255,0.90);
+}
+.box02 {
+  box-sizing: content-box;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 39vw;
+  background-color: #f1d73f;  
+  transform: rotateZ(-4deg);
+}
+.box03 {
+    transform: rotateZ(4deg);
+    margin: 2vw;
+}
+
+/**********************************************************************
+FONTS
+**********************************************************************/
+#txt1, #txt2, #txt3  {
+    vertical-align:top;
+}
+#txt1, #txt2 {    
+    font: normal 5.7vw/0.9 "Chewy", cursive;  
+}
+#txt2 {    
+    font: normal 6.2vw/0.9 "Chewy", cursive; 
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8); 
+    color:#000; 
+    padding-top: 10px;
+}
+#txt3 {    
+    margin-top:20px;
+    font: normal 4.1vw/0.9 "Chewy", cursive;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8); 
+    color:rgba(239, 74, 29, 0.90);   
+}
+
+/**********************************************************************
+IMG
+**********************************************************************/
+#img {   
+    background: no-repeat left top;      
+    position: absolute;
+    margin:0;
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:100vw;
+    height:100vw; 
+    resize:both;
+    top:0;
+    z-index:2; 
+}
+#img {   
+    animation-duration: 0.8s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: fadeOut;
+    animation-duration: 10.0s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: skaler;
+}
+
+/**********************************************************************
+MOTION
+**********************************************************************/
+
+.box01 {
+  animation-delay:1s; animation-duration: 1.2s;animation-iteration-count: 1;animation-fill-mode: both; animation-name: downUp;
+}
+.box02 {
+  animation-delay:1s; animation-duration: 1.4s;animation-iteration-count: 1;animation-fill-mode: both; animation-name: upDown;
+}
+.box03 {
+  animation-delay:2s; animation-duration: 1.4s;animation-iteration-count: 1;animation-fill-mode: both; animation-name: fadeOut;
+}
+
+@keyframes downUp
+{
+  0% {transform: scale(0);opacity:0;}
+  10% {transform: scale(0);opacity:1;}
+  30% {transform: scale(1.2);opacity:1;}
+  50% {transform: scale(1);opacity:1;}
+}
+@keyframes upDown
+{
+  0% {transform: scale(0);opacity:0;}
+  0% {transform: scale(1.3);opacity:1;}
+  30% {transform: scale(0.8);opacity:0.5;}
+  50% {transform: scale(1);opacity:1;}
+}
+@-webkit-keyframes fadeOut 
+{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes skaler
+{
+  0% {transform: scale(1);}
+  99% {transform: scale(1.1);opacity:1;}
+  100% {transform: scale(1.2);opacity:0;}
+}

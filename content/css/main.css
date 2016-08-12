@@ -1,0 +1,88 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: medium none;   
+    outline: none;
+}
+
+html, iframe {
+    height: 100%;
+}
+#main
+{
+    background-color:#000;
+}
+body, #all, #main, #pageStatic, #objVideo, #loading {
+    width: 100%;
+    height: 100%;      
+    overflow: hidden;
+    position:absolute;
+    resize:both;     
+}
+#pageStatic, #objVideo, #pageImg,  #header, #footer {
+    visibility:hidden;
+}
+#pageImg {
+    display:none;
+}
+#pageStatic, #objVideo {    
+    top: 0;
+    left: 0;
+}
+
+#pageStatic {
+    z-index:1;   
+}
+
+#objVideo {
+    z-index:0;   
+}
+/**********************************************************************
+PROGRESS BAR
+**********************************************************************/
+#progressbar {
+    background:#000; 
+}
+#progressbar, #expand {
+	width:100%; 
+	height:4px;
+    top: 0;
+    position:absolute;
+    z-index:100;
+}
+#expand {
+	background:#2187e7; 
+	box-shadow:0 0 10px 1px rgba(0,198,255,0.7);
+    animation-duration: 10.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: fullexpand;
+    animation-play-state:paused;
+    animation-timing-function:ease-in-out;
+
+}
+@keyframes fullexpand {
+	0%  { width:0;}
+	100%{ width:100%;}	
+}
+/**********************************************************************
+LOADING BLACK SHADOW
+**********************************************************************/
+#loading { 
+	z-index:100;
+    background-color:#000;
+}
+#loading, #opacityMove {	
+	/*box-shadow:0px 0px 10px 1px rgba(0,198,255,0.7);*/
+	animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: fadeTopPage;
+    animation-play-state:paused;
+    animation-timing-function:ease-in-out;
+}
+@keyframes fadeTopPage 
+{
+  0% {opacity:100;}
+  100% {opacity:0;}
+}
